@@ -1,17 +1,24 @@
 console.log("Hello World");
 
 let count = 0;
+
+
+const counter = document.getElementById('counter');
+console.log(counter);
+
+
+
 function increase(){
   count++;
-  console.log(count);
+  counter.innerText = count;
 }
 
 function decrease(){
   count--;
-  console.log(count);
+  counter.innerText = count;
 }
 
 function reset(){
   count = 0;
-  console.log(count);
+  counter.innerHTML = `<mark>${count}</mark>`
 }
