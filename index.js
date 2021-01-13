@@ -22,3 +22,12 @@ function reset(){
   count = 0;
   counter.innerHTML = `<mark>${count}</mark>`
 }
+
+
+function selectTheme(theme){
+document.getElementsByTagName('body').className = theme;
+document.getElementsByTagName('main').className = theme;
+
+
+const buttons = document.getElementsByTagName('button');
+}
